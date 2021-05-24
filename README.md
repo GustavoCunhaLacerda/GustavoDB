@@ -20,8 +20,6 @@
   <a href=#>
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/GustavoCunhaLacerda/GustavoDB">
   </a>
-  
-  <img alt="GitHub" src="https://img.shields.io/github/license/GustavoCunhaLacerda/GustavoDB">
 </p>
 
 <p align="center">
