@@ -30,11 +30,13 @@
 
 ## 👨🏻‍💻 Sobre o projeto
 
-- <p style="color: red;"> Esse é um clone simples de sqlite para estudo de C, estrutura de dados e banco de dados.</p>
+- <p style="color: red;"> Esse é um clone simples de sqlite para estudo de C, estrutura de dados e banco de dados. <br> Baseado no tutorial do <a href="https://github.com/cstack">CSTACK</a>.<p>
 
 ## 🚀 Tecnologias
 
 - C
+- Ruby
+- RSpec
 
 ## 💻 Começando
 
