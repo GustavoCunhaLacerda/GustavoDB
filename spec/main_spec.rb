@@ -1,7 +1,11 @@
 describe 'database' do
+  before do
+    `rm -rf ./test.db`
+  end
+
     def run_script(commands)
       raw_output = nil
-      IO.popen("./db", "r+") do |pipe|
+      IO.popen("./db ./test.db", "r+") do |pipe|
         commands.each do |command|
           pipe.puts command
         end
@@ -84,4 +88,24 @@ describe 'database' do
       ])
     end
 
+    it "persistência de dados após o fechamento da conexão" do
+      result1 = run_script([
+        "insert 1 user1 email.user1@gmail.com",
+        ".exit"
+      ])
+      expect(result1).to match_array([
+        "g_db > Executed.",
+        "g_db > "
+      ])
+
+      result2 = run_script([
+        "select",
+        ".exit"
+      ])
+      expect(result2).to match_array([
+        "g_db > (1, user1, email.user1@gmail.com)",
+        "Executed.",
+        "g_db > "
+      ])
+    end
   end
