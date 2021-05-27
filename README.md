@@ -35,6 +35,8 @@
 ## 🚀 Tecnologias
 
 - C
+- Ruby
+- RSpec
 
 ## 💻 Começando
 
