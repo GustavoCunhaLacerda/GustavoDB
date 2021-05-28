@@ -49,7 +49,7 @@ $ git clone https://github.com/GustavoCunhaLacerda/GustavoDB.git
 $ cd GustavoDB
 ```
 
-**Siga esses passos**
+**Siga esses passos para compilar e executar**
 
 ```bash
 # Compile o projeto
